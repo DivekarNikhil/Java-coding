@@ -1,12 +1,18 @@
+import java.util.Scanner;
+
 public class LoopEx1 {
     public static void main(String[]args)
     {
-        int i=1;
-        while(i<=7 )
+        Scanner s=new Scanner(System.in);
+        int sum =0 ;
+        while(sum <=100)
         {
-            System.out.println("hi nicks "+i);
-//            System.out.println("i am master of codding");
-            i++;
+          System.out.println("Enter the number");
+          sum +=s.nextInt();
+          if(sum>100)
+              break;
+
         }
+        System.out.println("Done all :"+sum);
     }
 }
